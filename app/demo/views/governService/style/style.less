@@ -1,0 +1,422 @@
+@color-start:#bccfe2;
+@color-end:#eaf0f6;
+@text-color:#3f648b;
+@all-bColor:#f1f2f7;
+@btn-start:#3f658c;
+@btn-end:#65a0d1;
+@color1:#e3664d;
+@color2:#e3b34d;
+@color3:#fefeff;
+@btn-o-start:#d2614b;
+@btn-o-end:#ec9673;
+@modal-start:#cddbea;
+@modal-end:#eaf0f6;
+
+@color-start1:#bccfe2;
+@color-end1:#eaf0f6;
+.back-color1{
+  background: @color-start1;
+  background: -moz-linear-gradient(bottom,  @color-start1 0%, @color-end1 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,@color-start1), color-stop(100%,@color-end1));
+  background: -webkit-linear-gradient(bottom,  @color-start1 0%,@color-end1 100%);
+  background: -o-linear-gradient(bottom,  @color-start1 0%,@color-end1 100%);
+  background: -ms-linear-gradient(bottom,  @color-start1 0%,@color-end1 100%);
+  background: linear-gradient(to top,  @color-start1 0%, @color-end1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@color-start1, endColorstr=@color-end1,GradientType=0 );
+}
+
+
+.back-color{
+  background: @color-start;
+  background: -moz-linear-gradient(bottom,  @color-start 0%, @color-end 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,@color-start), color-stop(100%,@color-end));
+  background: -webkit-linear-gradient(bottom,  @color-start 0%,@color-end 100%);
+  background: -o-linear-gradient(bottom,  @color-start 0%,@color-end 100%);
+  background: -ms-linear-gradient(bottom,  @color-start 0%,@color-end 100%);
+  background: linear-gradient(to top,  @color-start 0%, @color-end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@color-start, endColorstr=@color-end,GradientType=0 );
+}
+.modal-title-back{
+  background: @modal-start;
+  background: -moz-linear-gradient(bottom,  @modal-start 0%, @modal-end 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,@modal-end), color-stop(100%,@modal-end));
+  background: -webkit-linear-gradient(bottom,  @modal-start 0%,@modal-end 100%);
+  background: -o-linear-gradient(bottom,  @modal-start 0%,@modal-end 100%);
+  background: -ms-linear-gradient(bottom,  @modal-start 0%,@modal-end 100%);
+  background: linear-gradient(to top,  @modal-start 0%, @modal-end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@modal-start, endColorstr=@modal-end,GradientType=0 );
+}
+.btn-bcolor{
+  background: @btn-start;
+  background: -moz-linear-gradient(bottom,  @btn-start 0%, @btn-end 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,@btn-start), color-stop(100%,@btn-end));
+  background: -webkit-linear-gradient(bottom,  @btn-start 0%,@btn-end 100%);
+  background: -o-linear-gradient(bottom,  @btn-start 0%,@btn-end 100%);
+  background: -ms-linear-gradient(bottom,  @btn-start 0%,@btn-end 100%);
+  background: linear-gradient(to top,  @btn-start 0%, @btn-end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@btn-start, endColorstr=@btn-end,GradientType=0 );
+}
+.btn-bcolor-orage{
+  background: @btn-o-start;
+  background: -moz-linear-gradient(bottom,  @btn-o-start 0%, @btn-o-end 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,@btn-o-start), color-stop(100%,@btn-o-end));
+  background: -webkit-linear-gradient(bottom,  @btn-o-start 0%,@btn-o-end 100%);
+  background: -o-linear-gradient(bottom,  @btn-o-start 0%,@btn-o-end 100%);
+  background: -ms-linear-gradient(bottom,  @btn-o-start 0%,@btn-o-end 100%);
+  background: linear-gradient(to top,  @btn-o-start 0%, @btn-o-end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@btn-o-start, endColorstr=@btn-o-end,GradientType=0 );
+}
+
+// 待办服务界面css
+.dbfw{
+  .a-detail{
+    display: inline-block;
+    padding-left:10px;
+  }
+  .reply{
+    float: right;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+//服务监控界面css
+.fwjk{
+  .bc-color1{
+    background-color: @color1;
+  }
+  .bc-color2{
+    background-color: @color2;
+  }
+  .bc-color3{
+    background-color: @color3;
+  }
+  .tips{
+    position: absolute;
+    top: 12px;
+    right: 35px;
+    .rect{
+      height: 10px;
+      width: 10px;
+      display: inline-block;
+      margin-top: 2px;
+      margin-right: 3px;
+      border-radius: 2px;
+    }
+    >li{
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  .color1{
+    color: @color1;
+    >td:first-child{
+      .bc-color1;
+      color: #fff;
+    }
+  }
+  .color2{
+    color: @color2;
+    >td:first-child{
+      .bc-color2;
+      color: #fff;
+    }
+  }
+  .color3{
+    color: #000;
+    >td:first-child{
+      .bc-color3;
+      color: #000;
+    }
+  }
+}
+//服务分类界面
+.fwfl{
+  .creator{
+    padding: 0 5%;
+    .ant-upload.ant-upload-select{
+      text-align: left !important;
+      width: 80px !important;
+    }
+    >span{
+      display: inline-block;
+    }
+    .same{
+      >img{
+        margin-right: 3px;
+        margin-top: -4px;
+      }
+      cursor: pointer;
+    }
+    .delete{
+      width: 45%;
+      float: right;
+      color: #e3664d;
+      display: inline-block;
+      height: 25px;
+      padding-top: 4px;
+    }
+    .re-load{
+      color: #239bd1;
+    }
+    .load{
+      color: #43aa70;
+    }
+
+
+  }
+}
+//可编辑表格css 在组件messageTable1中
+.my-editable-cell1 {
+  position: relative;
+  .editable-cell-input-wrapper{
+    padding-right: 24px;
+  }
+  .editable-cell-text-wrapper {
+    padding: 5px 24px 5px 5px;
+  }
+  .editable-cell-icon,.editable-cell-icon-check {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    cursor: pointer;
+    line-height: 28px;
+    &:hover{
+        color: #108ee9;
+    }
+  }
+  .editable-cell-icon {
+    line-height: 18px;
+    display: none;
+  }
+  &:hover .editable-cell-icon {
+    display: inline-block;
+  }
+}
+
+//服务分类界面css
+.fwfb{
+  .list-style{
+    >li{
+      cursor: pointer;
+      color: #239bd1;
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+      &:nth-child(3){
+        color: #e3664d;
+      }
+    }
+    .back{
+      color:#666666;
+    }
+    .publish{
+      color:#43aa70;
+    }
+
+  }
+}
+
+.fwfb-detail-modal{
+  .ant-form-item-label{
+    width: 115px;
+  }
+  .lable-width-long{
+    .ant-form-item-label{
+      width:130px;
+    }
+  }
+}
+
+//弹出框样式
+
+.modal{
+  .ant-modal-close{
+    .ant-modal-close-x{
+      &:before{
+        color: #3f648b;
+      }
+    }
+  }
+  .ant-modal-header{
+    height: 44px;
+    background-blend-mode: overlay, normal;
+    border-radius: 4px 4px 0 0;
+    .modal-title-back;
+    //.back-color1;
+    .ant-modal-title{
+      padding-left: 30px;
+      &:before{
+        position: absolute;
+        left: 20px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../images/icon_fuwuxiangqing.png");
+      }
+    }
+  }
+  .ant-modal-body{
+    padding: 20px 30px 30px 30px;
+    height: auto;
+    max-height:calc(~"100vh - 200px");
+    overflow: scroll;
+  }
+  .ant-tabs-bar{
+    border-bottom: none;
+  }
+  .ant-tabs-nav .ant-tabs-tab{
+    margin-bottom: 15px;
+    padding: 4px 28px;
+    border:1px solid @text-color;
+    margin-right:0;
+    &:nth-child(2){
+      border-radius: 6px 0 0 6px;
+      border-right: none;
+    }
+    &:last-child{
+      border-radius: 0 6px 6px 0;
+      border-left: none;
+    }
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+    background-color: @text-color;
+    color: #fff;
+  }
+  .ant-tabs-ink-bar{
+    display: none!important;
+  }
+  .ant-tabs-nav{
+    border-bottom: 1px solid @text-color;
+  }
+  .ant-modal-title{
+    font-family: 'MicrosoftYaHei';
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: @text-color;
+  }
+  textarea.ant-input{
+    color: #000;
+  }
+
+}
+
+
+//全局变量
+
+.my-form1{
+  line-height: 6;
+  .padding-top-4{
+    padding-top: 4px;
+  }
+  .ant-form-item{
+    margin-bottom: 0;
+  }
+  .ant-form-item-label label{
+    font-size: 14px;
+  }
+  .ant-calendar-picker{
+    width: 100%;
+  }
+}
+.img{
+  vertical-align:middle!important;
+}
+
+.a-style1{    //a标签颜色
+  color:@text-color;
+}
+.btn{
+  height: 34px!important;
+  border-radius: 6px !important;
+  .btn-bcolor!important;
+  .text{
+    color: #fff;
+    line-height:30px;
+    font-size: 16px!important;
+    padding: 8px;
+    img{
+      margin-top: -3px;
+    }
+
+  }
+}
+.btn-o{
+  height: 34px!important;
+  .btn-bcolor-orage!important;
+  .text{
+    color: #fff;
+    line-height:30px;
+    font-size: 16px!important;
+    padding: 8px;
+    img{
+      margin-top: -3px;
+    }
+  }
+}
+btn-bcolor-orage
+.mt30{
+  height: 30px;
+}
+.mt10{
+  margin-top: 10px;
+}
+
+.ml15{
+  margin-left: 15px;
+}
+.table1{    //正常表格
+  .ant-table-bordered{
+    .ant-table-tbody{
+      .cell-text-left{
+        text-align: left !important;
+      }
+      .mm-operation{
+        text-align: left;
+      }
+    }
+  }
+  span{
+    font-size: 14px!important;
+  }
+  .ant-table-bordered .ant-table-tbody>tr>td, .ant-table-bordered .ant-table-thead>tr>th{
+    text-align: center!important;
+    height: 40px;
+    padding: 0 8px;
+  }
+  .ant-table-bordered .ant-table-thead>tr>th{
+    background-color: #e3e3e3;
+  }
+  .ant-table-tbody>tr>td{
+    border-bottom: none;
+    font-size: 14px;
+
+  }
+  .ant-table-tbody>tr{
+    &:nth-child(even){
+      background-color: #f2f7fa;
+    }
+    &:last-child td{
+      border-bottom: 1px solid #e9e9e9;
+    }
+  }
+  .ant-table-tbody>tr:hover{
+    >td{
+      background-color: #d3dfec;
+    }
+  }
+}
+.table2{   //表格最后一行字体变化
+  .font-style{
+    font-weight: bold;
+  }
+}
+.dis-input{     //不能输入的input框
+  border: none!important;
+  background-color: #ebebeb!important;
+  pointer-events: none!important;
+  color: #000!important;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" style="font-size:10px">
+
+<head>
+    <meta charset="utf-8" />
+    <title>可视化办案平台</title>
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <!-- <meta name="description" content="珠海民生数据开放平台" /> -->
+    <meta name="keywords" content="石河子,政务,服务" />
+    <meta name="author" content="yiru,ah.yiru@gmail.com" />
+    <meta name="viewport" content="height = device-height ,width =  device-width  ,initial-scale = 0.25 ,minimum-scale = 0.2 ,maximum-scale = 2 ,user-scalable = yes ">
+    <meta name="apple-mobile-web-app-title" content="PhoenixUI" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="<%= htmlWebpackPlugin.files.chunks.app.css[0] %>" rel="stylesheet">
+    <!-- 获取IP及所在城市 -->
+    <!-- <script type="text/javascript" src="http://pv.sohu.com/cityjson"></script>
+    <script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script> -->
+    <script type="text/javascript" src="https://ipip.yy.com/get_ip_info.php"></script>
+    <!-- 获取经纬度 -->
+    <!-- <script type="text/javascript" src="http://api.51ditu.com/js/maps.js"></script>
+    <script type="text/javascript" src="http://api.51ditu.com/js/ipposition.js"></script>  -->
+    <!-- 引入我秀地图 -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2uGcFZlDtTgbZigf6W9fp6ORlYjDtGBX"></script>
+</head>
+
+<body class="">
+    <div id="app"></div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.app.entry %>"></script>
+</body>
+
+</html>

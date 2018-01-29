@@ -1,0 +1,414 @@
+@fontSize1:#d8e6f6;
+@left-width:340px;
+@right-width:calc(~"100vw - 450px");
+@bg1:linear-gradient(270deg, #090e37 0%, rgba(9, 14, 53, 0.06) 100%), linear-gradient(rgba(10, 29, 51, 0.34), rgba(10, 29, 51, 0.34));
+.main-page{
+  overflow: hidden;
+  .left{
+    width: @left-width;
+    float: left;
+    margin:20px 0 25px 45px;
+    //height: 100vh;
+    .tree-title{
+      background: url("./imgs/border/树标题框.png") no-repeat;
+      color: #ffffff;
+      font-size: 20px;
+      margin-bottom: 20px;
+      img{
+        margin: 15px 20px 15px 35px;
+      }
+    }
+    .mmtree-content{
+      background: url("./imgs/border/树框.png") no-repeat;
+      height:875px;
+      overflow-y: auto;
+      padding: 25px 50px;
+      position: relative;
+      .tree-close{
+        position: absolute;
+        right: 0;
+        top: 40%;
+      }
+      .ant-tree.ant-tree-show-line li:before{
+        height: 97%;
+      }
+      .ant-tree.ant-tree-show-line .grand-node:before{
+        height: 69%;
+        margin: 26px 0;
+      }
+      .ant-tree{
+        li .ant-tree-node-content-wrapper.ant-tree-node-selected{
+          background-color: rgba(210, 234, 251, 0);
+          span{
+            color: #69bee3;
+          }
+        }
+        li .ant-tree-node-content-wrapper:hover{
+          background-color: rgba(210, 234, 251, 0);
+        }
+
+        .ant-tree-title{
+          color: @fontSize1;
+          font-size: 16px;
+        }
+        .ant-tree-switcher{
+          margin-top: 6px;
+          margin-left: 6px;
+        }
+        .root-node .ant-tree-switcher{
+          //opacity: 0;
+          background: url("./imgs/多层结构.png") no-repeat;
+        }
+        .parent-node{
+          .ant-tree-switcher{
+            margin-top: 10px;
+            background: url("./imgs/收起.png") no-repeat;
+          }
+          .ant-tree-switcher_open{
+            background: url("./imgs/展开.png") no-repeat;
+          }
+        }
+        .grand-node{
+          .ant-tree-switcher{
+            margin-left: 4px;
+            background: url("./imgs/接访室小.png") no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .right{
+    float: right;
+    width: @right-width;
+    height: 970px;
+    margin-right: 25px;
+    //padding: 10px 15px;
+    //border: 1px solid #ffffff;
+    //background: url("./imgs/");
+    position: relative;
+    .show{
+      display: inline-block;
+    }
+    .hidden{
+      display: none;
+    }
+    .corner-img{
+      position: absolute;
+    }
+    .BMap{
+      width: 100%;
+      height: 100%;
+      .map{
+        width:100%;
+        height: 100%;
+      }
+    }
+    .info-modal{
+      position: absolute;
+      top: 17px;
+      background: rgba(13, 19, 66, 0.91);
+      margin:20px 18px 10px;
+      //padding: 2px;
+    }
+    .title{
+      //border: solid 1px rgba(39, 67, 130, 1);
+      //background-image: @bg1;
+      //background: linear-gradient(135deg, transparent 15px, @bg1 0);
+      margin:5px 0 13px;
+      .modal-close{
+        float: right;
+        margin: 5px 15px 0 0;
+        cursor: pointer;
+      }
+      background: url("./imgs/border/标题框.png") no-repeat;
+      img{
+        margin: 15px 18px;
+      }
+      span{
+        font-size: 20px;
+        color: #ffffff;
+      }
+    }
+    .inline-div{
+      display: inline-block;
+      position: relative;
+    }
+    .suspect{
+      width: 490px;
+      height: 490px;
+      position: relative;
+      background: url("./imgs/border/嫌疑人现场.png") no-repeat;
+      .suspec-video{
+        width:100%;
+        height:355px;
+      }
+      .case-info{
+        width: 170px;
+        height: 124px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 90px;
+        left: 5px;
+        z-index: 999;
+        padding: 5px 10px;
+        p{
+          font-family: PingFang-SC-Bold;
+          font-size: 14px;
+          line-height: 36px;
+          color: #ffffff;
+        }
+      }
+      .suspect-state{
+        left: 362px;
+        right: 15px;
+        width: 111px;
+        height: 70px;
+      }
+      .suspect-message{
+        width: 100%;
+        height: 38px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        line-height: 36px;
+        color: #ffffff;
+        padding-left: 25px;
+        position: absolute;
+        top: 45px;
+      }
+    }
+    .suspect-footer{
+      img{
+        margin: 10px 30px 40px;
+      }
+      .suspect-info{
+        display: inline-block;
+        margin: 11px 0;
+        p{
+          span{
+            vertical-align: baseline;
+          }
+        }
+        .suspectName{
+          color: #d8e6f6;
+          font-size: 18px;
+          span{
+            font-size: 18px;
+          }
+        }
+        .suspectID{
+          color: #2472c7;
+          font-size: 14px;
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .ask-science{
+      float: right;
+      background: url("./imgs/border/提审现场.png") no-repeat;
+      width: 916px;
+      height: 490px;
+      .ask-video{
+        width: 528px;
+        height:354px;
+      }
+      .ask-left{
+        float: left;
+      }
+      .ask-right{
+        width: 387px;
+        float: right;
+        .talking{
+          height: 190px;
+        }
+        .instant-messaging{
+          .column-title{
+            color: #d8e6f6;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            line-height: 2;
+          }
+          .talking-content{
+            height: 150px;
+            width: 100%;
+            padding: 0 20px;
+            p{
+              text-align: left;
+            }
+            .talker{
+              font-family: PingFang-SC-Bold;
+              font-size: 14px;
+              line-height: 36px;
+              color: #2472c7;
+            }
+            .message{
+              font-family: PingFang-SC-Bold;
+              font-size: 14px;
+              line-height: 36px;
+              color: #d8e6f6;
+            }
+          }
+          .mminput{
+            width: 355px;
+            margin: 0 auto;
+            border: solid 1px #30439c;
+            .myinput{
+              height: 56px;
+              width: 293px;
+              background: #111d38;
+              color: #d8e6f6;
+              font-size: 18px;
+              border: none;
+              padding-left: 5px;
+            }
+            img{
+              cursor: pointer;
+              margin: 0;
+              vertical-align: top;
+            }
+          }
+        }
+        img{
+          margin: 20px 140px;
+        }
+        p{
+          color: #c162ed;
+          text-align: center;
+        }
+      }
+      .ask-footer{
+        .suspect-footer{
+          &:first-child{
+            margin-right: 40px;
+          }
+          display: inline-block;
+          img{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .case-files{
+      background: url("./imgs/border/案件卷宗.png") no-repeat;
+      width: 490px;
+      height: 300px;
+      margin-top: 45px;
+      .case-left{
+        float: left;
+        padding: 20px 0 20px 25px;
+        width: 215px;
+        p{
+          color: #d8e6f6;
+          font-size: 16px;
+          line-height: 40px;
+          span{
+            vertical-align: baseline;
+            font-size: 16px;
+          }
+        }
+      }
+      .case-right{
+        float: right;
+        width: 270px;
+        padding: 25px 40px 25px 10px;
+        .history{
+          margin-bottom: 20px;
+          .history-title{
+            margin-bottom: 20px;
+            span{
+              font-size: 16px;
+              color: #d8e6f6;
+            }
+            .history-date{
+              color: #2472c7;
+              float: right;
+              display: inline-block;
+            }
+          }
+          .blue-border{
+            &:not(:first-child){
+              margin-left: 35px;
+            }
+            background: url("./imgs/border/矩形627.png") no-repeat;
+            color: #00e6ff;
+            padding: 3px 13px;
+          }
+        }
+      }
+    }
+    .record-files{
+      background: url("./imgs/border/笔录.png") no-repeat;
+      width: 916px;
+      height: 300px;
+      float: right;
+      margin-top: 45px;
+      .record-content{
+        .jianchayuan{
+          text-align: center;
+          font-size: 16px;
+          color: #d8e6f6;
+          margin-top: 20px;
+        }
+        .content-left{
+          margin: 20px 0 25px 50px;
+          float: left;
+          font-size: 16px;
+          line-height: 40px;
+          color: #d8e6f6;
+        }
+        .content-right{
+          float: left;
+          margin-left: 30px;
+          .record-title{
+            font-size: 16px;
+            color: #2472c7;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+    .suspect-message{
+      width: 100%;
+      height: 38px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+      line-height: 36px;
+      color: #ffffff;
+      padding-left: 25px;
+      position: absolute;
+      top: 45px;
+      z-index: 999;
+    }
+    .video-buttons{
+      position: absolute;
+      bottom: 90px;
+      height: 40px;
+      background-color: rgba(9, 15, 37, 0.74);
+      width: 100%;
+      //z-index: 999;
+      img{
+        /* &:first-child{
+           margin-left: 300px;
+         }*/
+        float: right;
+        margin: 9px 20px;
+      }
+    }
+    .width-short{
+      width:57.6%;
+    }
+    .button-control{
+      float: right;
+      margin: 4px 10px;
+    }
+    .suspect-title{
+      span{
+        display: inline-block;
+        margin: 8px 25px;
+        font-size: 18px;
+        color: #d8e6f6;
+      }
+    }
+  }
+}

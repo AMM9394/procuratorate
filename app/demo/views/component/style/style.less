@@ -1,0 +1,44 @@
+@color-start:#bccfe2;
+@color-end:#eaf0f6;
+@text-color:#3f648b;
+.back-color{
+    background: @color-start;
+    background: -moz-linear-gradient(bottom,  @color-start 0%, @color-end 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,@color-start), color-stop(100%,@color-end));
+    background: -webkit-linear-gradient(bottom,  @color-start 0%,@color-end 100%);
+    background: -o-linear-gradient(bottom,  @color-start 0%,@color-end 100%);
+    background: -ms-linear-gradient(bottom,  @color-start 0%,@color-end 100%);
+    background: linear-gradient(to top,  @color-start 0%, @color-end 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@color-start, endColorstr=@color-end,GradientType=0 );
+}
+.card1{
+    box-shadow: 2px 2px 8px #bfc1c7;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    // margin-bottom: 30px;
+    .title{
+        .back-color;
+        padding-left: 20px;
+        line-height: 44px;
+        >span{
+            color: @text-color;
+            font-size: 15px;
+        }
+        .s1{
+            margin-left: 5px;
+        }
+        .s21{
+            font-size: 13px;
+            float:right;
+            margin-right: 20px;
+            margin-top: 3px;
+        }
+    }
+    .content{
+        padding: 15px 20px 20px 20px;
+    }
+}
+.second-card{
+  min-height: 500px;
+}

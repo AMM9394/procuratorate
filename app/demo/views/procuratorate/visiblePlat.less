@@ -1,0 +1,113 @@
+.visiblePlat{
+  background: url("./imgs/背景.png");
+  //height: 100vh;
+  .header{
+    background: url("./imgs/图层537.png") no-repeat;
+    z-index: 999;
+    overflow: hidden;
+    .main-title{
+      display: inline-block;
+      margin-left: 40%;
+      padding: 14px 20px;
+      .logo-font{
+        margin-top: 16px;
+      }
+  }
+    .header-info{
+      float: right;
+      margin:15px 40px auto auto;
+      .info{
+        display: inline-block;
+        cursor: pointer;
+        &:first-child{
+          margin-right: 20px;
+        }
+        img{
+          margin-right: 10px;
+        }
+        span{
+          font-size: 14px;
+          color: #3e5fc1;
+          display: inline-block;
+        }
+      }
+    }
+
+  }
+  .contents{
+    overflow: hidden;
+    .left-list{
+      float: left;
+      width: 420px;
+      margin:35px 45px 0;
+    }
+    .center-content{
+      float: left;
+      margin-top: 35px;
+      //width: 910px;
+      overflow: hidden;
+      .room-using{
+        margin-bottom: 35px;
+      }
+      .room{
+        display: inline-block;
+        &:not(:first-child){
+          margin-left: 25px;
+        }
+      }
+      .hubei-map{
+        background: url("./imgs/border/框4.png") no-repeat;
+        position: relative;
+        .blueRooms{
+          position: absolute;
+        }
+        .lengend{
+          position: absolute;
+          left: 50px;
+          top: 50px;
+          img{
+            margin-right: 10px;
+          }
+          span{
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 14px;
+            color: #ffffff;
+          }
+        }
+        .detail{
+          position: absolute;
+          top: 80px;
+          right: 100px;
+          border: solid 1px #6377b5;
+          padding: 20px;
+          p{
+            font-size: 14px;
+            color: #ffffff;
+          }
+          .city{
+            font-size: 18px;
+          }
+          .using{
+            font-size: 18px;
+            color: #05dded;
+          }
+          .split{
+            font-size: 14px;
+            color: #ffffff;
+          }
+          .total{
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: sub;
+          }
+        }
+      }
+    }
+    .right-list{
+      float: right;
+      width: 420px;
+      margin:35px 30px 25px 10px;
+    }
+  }
+}

@@ -1,0 +1,372 @@
+.main-page {
+  overflow: hidden;
+}
+.main-page .left {
+  width: 340px;
+  float: left;
+  margin: 20px 0 25px 45px;
+}
+.main-page .left .tree-title {
+  background: url("imgs/border/树标题框.png") no-repeat;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.main-page .left .tree-title img {
+  margin: 15px 20px 15px 35px;
+}
+.main-page .left .mmtree-content {
+  background: url("imgs/border/树框.png") no-repeat;
+  height: 875px;
+  overflow-y: auto;
+  padding: 25px 50px;
+  position: relative;
+}
+.main-page .left .mmtree-content .tree-close {
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+.main-page .left .mmtree-content .ant-tree.ant-tree-show-line li:before {
+  height: 97%;
+}
+.main-page .left .mmtree-content .ant-tree.ant-tree-show-line .grand-node:before {
+  height: 69%;
+  margin: 26px 0;
+}
+.main-page .left .mmtree-content .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: rgba(210, 234, 251, 0);
+}
+.main-page .left .mmtree-content .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected span {
+  color: #69bee3;
+}
+.main-page .left .mmtree-content .ant-tree li .ant-tree-node-content-wrapper:hover {
+  background-color: rgba(210, 234, 251, 0);
+}
+.main-page .left .mmtree-content .ant-tree .ant-tree-title {
+  color: #d8e6f6;
+  font-size: 16px;
+}
+.main-page .left .mmtree-content .ant-tree .ant-tree-switcher {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+.main-page .left .mmtree-content .ant-tree .root-node .ant-tree-switcher {
+  background: url("imgs/多层结构.png") no-repeat;
+}
+.main-page .left .mmtree-content .ant-tree .parent-node .ant-tree-switcher {
+  margin-top: 10px;
+  background: url("imgs/收起.png") no-repeat;
+}
+.main-page .left .mmtree-content .ant-tree .parent-node .ant-tree-switcher_open {
+  background: url("imgs/展开.png") no-repeat;
+}
+.main-page .left .mmtree-content .ant-tree .grand-node .ant-tree-switcher {
+  margin-left: 4px;
+  background: url("imgs/接访室小.png") no-repeat;
+}
+.main-page .right {
+  float: right;
+  width: calc(100vw - 450px);
+  height: 970px;
+  margin-right: 25px;
+  position: relative;
+}
+.main-page .right .show {
+  display: inline-block;
+}
+.main-page .right .hidden {
+  display: none;
+}
+.main-page .right .corner-img {
+  position: absolute;
+}
+.main-page .right .BMap {
+  width: 100%;
+  height: 100%;
+}
+.main-page .right .BMap .map {
+  width: 100%;
+  height: 100%;
+}
+.main-page .right .info-modal {
+  position: absolute;
+  top: 17px;
+  background: rgba(13, 19, 66, 0.91);
+  margin: 20px 18px 10px;
+}
+.main-page .right .title {
+  margin: 5px 0 13px;
+  background: url("imgs/border/标题框.png") no-repeat;
+}
+.main-page .right .title .modal-close {
+  float: right;
+  margin: 5px 15px 0 0;
+  cursor: pointer;
+}
+.main-page .right .title img {
+  margin: 15px 18px;
+}
+.main-page .right .title span {
+  font-size: 20px;
+  color: #ffffff;
+}
+.main-page .right .inline-div {
+  display: inline-block;
+  position: relative;
+}
+.main-page .right .suspect {
+  width: 490px;
+  height: 490px;
+  position: relative;
+  background: url("imgs/border/嫌疑人现场.png") no-repeat;
+}
+.main-page .right .suspect .suspec-video {
+  width: 100%;
+  height: 355px;
+}
+.main-page .right .suspect .case-info {
+  width: 170px;
+  height: 124px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90px;
+  left: 5px;
+  padding: 5px 10px;
+}
+.main-page .right .suspect .case-info p {
+  font-family: PingFang-SC-Bold;
+  font-size: 14px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.main-page .right .suspect .suspect-state {
+  left: 362px;
+  right: 15px;
+  width: 111px;
+  height: 70px;
+}
+.main-page .right .suspect .suspect-message {
+  width: 100%;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 36px;
+  color: #ffffff;
+  padding-left: 25px;
+  position: absolute;
+  top: 45px;
+}
+.main-page .right .suspect-footer img {
+  margin: 10px 30px 40px;
+}
+.main-page .right .suspect-footer .suspect-info {
+  display: inline-block;
+  margin: 11px 0;
+}
+.main-page .right .suspect-footer .suspect-info p span {
+  vertical-align: baseline;
+}
+.main-page .right .suspect-footer .suspect-info .suspectName {
+  color: #d8e6f6;
+  font-size: 18px;
+}
+.main-page .right .suspect-footer .suspect-info .suspectName span {
+  font-size: 18px;
+}
+.main-page .right .suspect-footer .suspect-info .suspectID {
+  color: #2472c7;
+  font-size: 14px;
+}
+.main-page .right .suspect-footer .suspect-info .suspectID span {
+  font-size: 14px;
+}
+.main-page .right .ask-science {
+  float: right;
+  background: url("imgs/border/提审现场.png") no-repeat;
+  width: 916px;
+  height: 490px;
+}
+.main-page .right .ask-science .ask-video {
+  width: 528px;
+  height: 354px;
+}
+.main-page .right .ask-science .ask-left {
+  float: left;
+}
+.main-page .right .ask-science .ask-right {
+  width: 387px;
+  float: right;
+}
+.main-page .right .ask-science .ask-right .talking {
+  height: 190px;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .column-title {
+  color: #d8e6f6;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  line-height: 2;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .talking-content {
+  height: 150px;
+  width: 100%;
+  padding: 0 20px;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .talking-content p {
+  text-align: left;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .talking-content .talker {
+  font-family: PingFang-SC-Bold;
+  font-size: 14px;
+  line-height: 36px;
+  color: #2472c7;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .talking-content .message {
+  font-family: PingFang-SC-Bold;
+  font-size: 14px;
+  line-height: 36px;
+  color: #d8e6f6;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .mminput {
+  width: 354px;
+  margin: 0 auto;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .mminput input {
+  height: 57px;
+  width: 293px;
+}
+.main-page .right .ask-science .ask-right .instant-messaging .mminput img {
+  margin: 0;
+  vertical-align: top;
+}
+.main-page .right .ask-science .ask-right img {
+  margin: 20px 140px;
+}
+.main-page .right .ask-science .ask-right p {
+  color: #c162ed;
+  text-align: center;
+}
+.main-page .right .ask-science .ask-footer .suspect-footer {
+  display: inline-block;
+}
+.main-page .right .ask-science .ask-footer .suspect-footer:first-child {
+  margin-right: 40px;
+}
+.main-page .right .ask-science .ask-footer .suspect-footer img {
+  margin-right: 10px;
+}
+.main-page .right .case-files {
+  background: url("imgs/border/案件卷宗.png") no-repeat;
+  width: 490px;
+  height: 300px;
+  margin-top: 45px;
+}
+.main-page .right .case-files .case-left {
+  float: left;
+  padding: 20px 0 20px 25px;
+  width: 215px;
+}
+.main-page .right .case-files .case-left p {
+  color: #d8e6f6;
+  font-size: 16px;
+  line-height: 40px;
+}
+.main-page .right .case-files .case-left p span {
+  vertical-align: baseline;
+  font-size: 16px;
+}
+.main-page .right .case-files .case-right {
+  float: right;
+  width: 270px;
+  padding: 25px 40px 25px 10px;
+}
+.main-page .right .case-files .case-right .history {
+  margin-bottom: 20px;
+}
+.main-page .right .case-files .case-right .history .history-title {
+  margin-bottom: 20px;
+}
+.main-page .right .case-files .case-right .history .history-title span {
+  font-size: 16px;
+  color: #d8e6f6;
+}
+.main-page .right .case-files .case-right .history .history-title .history-date {
+  color: #2472c7;
+  float: right;
+  display: inline-block;
+}
+.main-page .right .case-files .case-right .history .blue-border {
+  background: url("imgs/border/矩形627.png") no-repeat;
+  color: #00e6ff;
+  padding: 3px 13px;
+}
+.main-page .right .case-files .case-right .history .blue-border:not(:first-child) {
+  margin-left: 35px;
+}
+.main-page .right .record-files {
+  background: url("imgs/border/笔录.png") no-repeat;
+  width: 916px;
+  height: 300px;
+  float: right;
+  margin-top: 45px;
+}
+.main-page .right .record-files .record-content .jianchayuan {
+  text-align: center;
+  font-size: 16px;
+  color: #d8e6f6;
+  margin-top: 20px;
+}
+.main-page .right .record-files .record-content .content-left {
+  margin: 20px 0 25px 50px;
+  float: left;
+  font-size: 16px;
+  line-height: 40px;
+  color: #d8e6f6;
+}
+.main-page .right .record-files .record-content .content-right {
+  float: left;
+  margin-left: 30px;
+}
+.main-page .right .record-files .record-content .content-right .record-title {
+  font-size: 16px;
+  color: #2472c7;
+  line-height: 36px;
+}
+.main-page .right .suspect-message {
+  width: 100%;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 36px;
+  color: #ffffff;
+  padding-left: 25px;
+  position: absolute;
+  top: 45px;
+}
+.main-page .right .video-buttons {
+  position: absolute;
+  bottom: 90px;
+  height: 40px;
+  background-color: rgba(9, 15, 37, 0.74);
+  width: 100%;
+}
+.main-page .right .video-buttons img {
+  /* &:first-child{
+           margin-left: 300px;
+         }*/
+  float: right;
+  margin: 9px 20px;
+}
+.main-page .right .width-short {
+  width: 57.6%;
+}
+.main-page .right .button-control {
+  float: right;
+  margin: 4px 10px;
+}
+.main-page .right .suspect-title span {
+  display: inline-block;
+  margin: 8px 25px;
+  font-size: 18px;
+  color: #d8e6f6;
+}
