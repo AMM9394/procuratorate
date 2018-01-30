@@ -14,6 +14,7 @@ const TreeNode = Tree.TreeNode;
 const treeDataUrl = url + '/Column/getTreeList' ;
 const caseUrl = url + '/CaseInfo/single/' ;
 const suspectUrl = url + '/SuspectInfo/single/' ;
+const videoInfoUrl = url + '/UserInfo/single/' ;
 
 import mydata from './mock/data.json';
 const topLeft = require('./imgs/1.png');
@@ -48,19 +49,28 @@ export default class MainPage extends Component {
   };
 
   componentWillMount(){
+
+  }
+
+  componentDidMount(){
     this.setState({treeData:mydata});
     $get(treeDataUrl,(data)=>{
-
-      /*console.log('============',data);
-      console.log('++++++++++++',mydata);*/
-      this.setState({treeData:data});
-      // console.log(data);
+      this.setState({treeData:data,defaultExpandedKeys: ['367']});
     });
   }
   onLeafSelected=(key,item)=>{
-    // console.log('//////////////',key);
+    // console.log(key, item);
     let {treeData} = this.state;
     // console.log(treeData)
+    let isAddConlumn = item.node.props.dataRef.isAddConlumn;
+    if(isAddConlumn === '1') {
+      /*叶子结点点击事件*/
+      let userId = item.node.props.dataRef.userId;
+      // console.log(userId);
+      $get(videoInfoUrl + userId, (videoData) => {
+        let {userCode, userIp, userPassword} = videoData;
+      });
+    }
     const pos = item.node.props.pos;
     const arry = pos.split('-');
     // let position = [];
@@ -94,12 +104,14 @@ export default class MainPage extends Component {
     return data.map((item) => {
       if (item.children) {
         return (
-          <TreeNode title={item.colName} key={item.id} dataRef={item} className={this.treeNodeClassName(item)}>
+          <TreeNode title={item.colName} key={item.id}
+                    dataRef={item} className={this.treeNodeClassName(item)}>
             {this.renderTreeNodes(item.children)}
           </TreeNode>
         );
       }
-      return <TreeNode title={item.colName} key={item.id} dataRef={item} className={this.treeNodeClassName(item)} />;
+      return <TreeNode title={item.colName} key={item.id} userId={item.userId}
+                       dataRef={item} className={this.treeNodeClassName(item)} />;
     });
   }
   render() {

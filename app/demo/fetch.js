@@ -1,4 +1,4 @@
-export const root = 'http://10.94.20.14:8080';
+export const root = 'http://10.94.20.24:8080';
 export const url = root + '/policy/services';
 
 export const $get = function(url,  success) {
