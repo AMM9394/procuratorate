@@ -134,6 +134,6 @@
     "svgpath": "^2.2.1",
     "wangeditor": "^3.0.8",
     "whatwg-fetch": "^2.0.3",
-    "yrui": "^1.4.7"
+    "yrui": "^1.6.13"
   }
 }
